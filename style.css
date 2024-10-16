@@ -65,7 +65,7 @@ ul li:hover {
 
 /* Link styling */
 a {
-    color: #333;
+    color: #007BFF; /* Set to a blue color */
     text-decoration: none;
     transition: color 0.3s ease;
 }
