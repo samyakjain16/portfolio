@@ -4,47 +4,92 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-  }
-  header {
+}
+
+/* Header styles */
+header {
     background-color: #333;
     color: white;
     padding: 10px 0;
     text-align: center;
-  }
-  header h1 {
+}
+
+header h1 {
     margin: 0;
-  }
-  section {
+}
+
+/* Section styling */
+section {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  h2 {
+}
+
+/* Paragraph styling - ensures clear spacing */
+p {
+    margin: 15px 0;
+    line-height: 1.6; /* Adds better line spacing for readability */
+    color: #333;
+}
+
+/* Headings styling */
+h2 {
     color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
-    margin-bottom: 10px;
-  }
-  ul {
+    margin-bottom: 20px;
+}
+
+/* List styling */
+ul {
     list-style-type: none;
     padding-left: 0;
-  }
-  ul li {
+}
+
+ul li {
     background-color: #f4f4f4;
-    margin: 5px 0;
-    padding: 10px;
+    margin: 10px 0; /* Increased spacing for clarity */
+    padding: 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
-  }
-  footer {
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for list items */
+ul li:hover {
+    background-color: #eaeaea;
+}
+
+/* Link styling */
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Add hover effect for links */
+a:hover {
+    color: #007BFF;
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Footer styling */
+footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
+    margin-top: 20px;
+}
+
+/* If you want the footer to stick to the bottom of the viewport, uncomment the lines below */
+/*
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-  }
+}
+*/
