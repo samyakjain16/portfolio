@@ -6,6 +6,7 @@ body {
     color: #333;
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: white;
@@ -17,6 +18,7 @@ header h1 {
     margin: 0;
 }
 
+/* Section styling */
 section {
     max-width: 1000px;
     margin: 20px auto;
@@ -26,13 +28,22 @@ section {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Paragraph styling - ensures clear spacing */
+p {
+    margin: 15px 0;
+    line-height: 1.6; /* Adds better line spacing for readability */
+    color: #333;
+}
+
+/* Headings styling */
 h2 {
     color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
+/* List styling */
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -40,51 +51,32 @@ ul {
 
 ul li {
     background-color: #f4f4f4;
-    margin: 10px 0;
+    margin: 10px 0; /* Increased spacing for clarity */
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #ddd;
     transition: background-color 0.3s ease;
-    font-size: 10px;
 }
 
+/* Add hover effect for list items */
 ul li:hover {
     background-color: #eaeaea;
 }
 
-/* Style the toggle icon */
-.toggle-icon {
-    font-size: 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    color: #007BFF;
-    transition: color 0.3s ease;
-}
-
-.toggle-icon:hover {
-    color: #0056b3;
-}
-
-/* Additional details - hidden by default */
-.additional-details {
-    display: none;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-left: 4px solid #007BFF;
-    margin-top: 10px;
-}
-
+/* Link styling */
 a {
-    color: #007BFF;
+    color: #007BFF; /* Set to a blue color */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+/* Add hover effect for links */
 a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    color: #007BFF;
+    text-decoration: underline; /* Adds underline on hover */
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
@@ -92,3 +84,12 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+/* If you want the footer to stick to the bottom of the viewport, uncomment the lines below */
+/*
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+*/
