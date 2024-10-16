@@ -1,13 +1,32 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
 /* Sidebar styling */
 .sidebar {
     width: 300px;
     padding: 20px;
-    background-color: #f4f4f4;
-    position: fixed;
-    height: 100%;
-    left: 0;
-    top: 0;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .sidebar h2 {
@@ -41,16 +60,51 @@
     background-color: #0056b3;
 }
 
-.experience-details {
+.additional-details {
     display: none; /* Hidden by default */
     padding: 10px;
-    background-color: white;
-    margin-top: 5px;
+    background-color: #f9f9f9;
     border-left: 4px solid #007BFF;
+    margin-top: 10px;
+}
+
+/* Section and content styling */
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-#main-content {
-    margin-left: 320px; /* Shift the main content to the right to make space for the sidebar */
-    padding: 20px;
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }

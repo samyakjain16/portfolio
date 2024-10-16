@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Samyak Jain - AI Enthusiast, Developer, and Researcher">
+    <meta name="description" content="Portfolio of Samyak Jain - AI Engineer, Developer, and Researcher">
     <title>Samyak Jain - AI Engineer & Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,38 +13,103 @@
     <h1>Samyak Jain - AI Engineer & Developer</h1>
 </header>
 
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Samyak, an AI enthusiast, developer, and researcher passionate about building innovative AI solutions. I specialize in working with large language models, fine-tuning, and responsible AI. My goal is to use technology to solve real-world problems and contribute to the evolving AI ecosystem.</p>
+</section>
+
 <!-- Sidebar for Tech Experience -->
 <aside class="sidebar">
     <h2>Tech Experience</h2>
     <ul>
         <li>
-            <h3 onclick="toggleExperience('experience1')">Experience 1: LLMOps and Generative AI</h3>
-            <div id="experience1" class="experience-details">
+            <h3 onclick="toggleDetails('experience1')">Experience 1: LLMOps and Generative AI
+                <span class="toggle-icon">+</span>
+            </h3>
+            <div id="experience1" class="additional-details">
                 <p>Worked extensively on large language models, deploying and fine-tuning them for various AI tasks. Implemented Responsible AI strategies and optimized models for faster inference.</p>
             </div>
         </li>
         <li>
-            <h3 onclick="toggleExperience('experience2')">Experience 2: Full-Stack Development</h3>
-            <div id="experience2" class="experience-details">
+            <h3 onclick="toggleDetails('experience2')">Experience 2: Full-Stack Development
+                <span class="toggle-icon">+</span>
+            </h3>
+            <div id="experience2" class="additional-details">
                 <p>Developed full-stack applications using FastAPI, React.js, and MongoDB. Built end-to-end solutions, including authentication, data visualization, and dynamic user interactions.</p>
             </div>
         </li>
         <li>
-            <h3 onclick="toggleExperience('experience3')">Experience 3: Cloud & DevOps</h3>
-            <div id="experience3" class="experience-details">
+            <h3 onclick="toggleDetails('experience3')">Experience 3: Cloud & DevOps
+                <span class="toggle-icon">+</span>
+            </h3>
+            <div id="experience3" class="additional-details">
                 <p>Designed and deployed scalable cloud architectures using AWS services like Lambda, DynamoDB, and Amazon Bedrock for data processing and real-time analytics.</p>
             </div>
         </li>
     </ul>
 </aside>
 
-<section id="main-content">
-    <!-- Your existing content goes here -->
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <h3>Project 1: Migration Management Platform
+                <span class="toggle-icon" onclick="toggleDetails('project1')">+</span>
+            </h3>
+            <p>This is a full-stack platform for migration agents to manage client data, built with React.js, FastAPI, and MongoDB. It features authentication, data visualization, and dynamic client-agent linking.</p>
+            <div id="project1" class="additional-details">
+                <p>Additional details: The platform also integrates with third-party APIs for visa status updates and features a role-based permission system for agents and their clients.</p>
+            </div>
+            <a href="https://github.com/yourusername/project1-repo">View on GitHub</a>
+        </li>
+        <li>
+            <h3>Project 2: Esports Data Analytics
+                <span class="toggle-icon" onclick="toggleDetails('project2')">+</span>
+            </h3>
+            <p>A data analytics project to track and analyze esports data in real-time. This solution uses AWS, DynamoDB, and Amazon Bedrock to provide insights on players and teams.</p>
+            <div id="project2" class="additional-details">
+                <p>Additional details: The system provides dashboards for real-time match analysis, player performance tracking, and customizable reports for teams and sponsors.</p>
+            </div>
+            <a href="https://github.com/yourusername/project2-repo">View on GitHub</a>
+        </li>
+        <li>
+            <h3>Project 3: LLM-Powered Digital Assistant
+                <span class="toggle-icon" onclick="toggleDetails('project3')">+</span>
+            </h3>
+            <p>Built a conversational assistant powered by Amazon Bedrock that helps users with esports data queries. Integrated advanced querying with DynamoDB and Lambda functions.</p>
+            <div id="project3" class="additional-details">
+                <p>Additional details: This assistant uses natural language processing to provide detailed player statistics, team matchups, and tournament history.</p>
+            </div>
+            <a href="https://github.com/yourusername/project3-repo">View on GitHub</a>
+        </li>
+    </ul>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li><strong>AI & Machine Learning:</strong> Generative AI, LLMOps, Fine-Tuning</li>
+        <li><strong>Programming Languages & Frameworks:</strong> Python, FastAPI, Streamlit, React.js, JavaScript, HTML/CSS</li>
+        <li><strong>Databases & Cloud:</strong> MongoDB, DynamoDB, AWS Services</li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, feel free to reach out:</p>
+    <ul>
+        <li>Email: <a href="mailto:samyak.au@gmail.com">samyak.au@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/sammy-jain">linkedin.com/in/sammy-jain</a></li>
+    </ul>
 </section>
 
 <script>
-function toggleExperience(experienceId) {
-    const details = document.getElementById(experienceId);
+function toggleDetails(itemId) {
+    const details = document.getElementById(itemId);
     if (details.style.display === "none" || details.style.display === "") {
         details.style.display = "block";
     } else {
