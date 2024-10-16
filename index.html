@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Samyak Jain - AI Enthusiast, Developer, and Researcher">
-    <title> AI Engineer & Developer </title>
+    <title>AI Engineer & Developer</title>
     <link rel="stylesheet" href="style.css">
-        
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        ul li h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        ul li p {
+            display: none;
+            margin-top: 10px;
+        }
+        .expand-icon {
+            font-size: 20px;
+            cursor: pointer;
+            color: #333;
+        }
+        .expanded p {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+
+    <script>
+        function toggleDetails(event) {
+            const projectItem = event.currentTarget.parentElement;
+            projectItem.classList.toggle('expanded');
+        }
+    </script>
 </head>
 <body>
 
@@ -23,17 +96,17 @@
     <h2>Projects</h2>
     <ul>
         <li>
-            <h3>Project 1: Migration Management Platform</h3>
+            <h3 onclick="toggleDetails(event)">Project 1: Migration Management Platform <span class="expand-icon">▼</span></h3>
             <p>This is a full-stack platform for migration agents to manage client data, built with React.js, FastAPI, and MongoDB. It features authentication, data visualization, and dynamic client-agent linking.</p>
             <a href="https://github.com/yourusername/project1-repo">View on GitHub</a>
         </li>
         <li>
-            <h3>Project 2: Esports Data Analytics</h3>
+            <h3 onclick="toggleDetails(event)">Project 2: Esports Data Analytics <span class="expand-icon">▼</span></h3>
             <p>A data analytics project to track and analyze esports data in real-time. This solution uses AWS, DynamoDB, and Amazon Bedrock to provide insights on players and teams.</p>
             <a href="https://github.com/yourusername/project2-repo">View on GitHub</a>
         </li>
         <li>
-            <h3>Project 3: LLM-Powered Digital Assistant</h3>
+            <h3 onclick="toggleDetails(event)">Project 3: LLM-Powered Digital Assistant <span class="expand-icon">▼</span></h3>
             <p>Built a conversational assistant powered by Amazon Bedrock that helps users with esports data queries. Integrated advanced querying with DynamoDB and Lambda functions.</p>
             <a href="https://github.com/yourusername/project3-repo">View on GitHub</a>
         </li>
@@ -52,7 +125,7 @@
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>If you'd like to get in touch, feel freeeee to reach out:</p>
+    <p>If you'd like to get in touch, feel free to reach out:</p>
     <ul>
         <li>Email: <a href="mailto:samyak.au@gmail.com">samyak.au@gmail.com</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/sammy-jain">linkedin.com/in/sammy-jain</a></li>
