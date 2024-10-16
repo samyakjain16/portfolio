@@ -45,6 +45,7 @@ ul li {
     border-radius: 5px;
     border: 1px solid #ddd;
     transition: background-color 0.3s ease;
+    font-size: small;
 }
 
 ul li:hover {
